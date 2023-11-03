@@ -1,0 +1,15 @@
+
+#!/bin/bash
+
+# this is script for Create Ansible provisioning directory
+value1=provision
+
+mkdir $value1
+
+mkdir -p $value1/inventory
+
+touch $value1/inventory/hosts.txt
+
+mkdir -p $value1/roles/dir_$value1/{defaults,files,handlers,meta,tasks,templates,vars}
+
+touch $value1/roles/dir_$value1/{defaults,,handlers,meta,tasks,vars}/main.yaml
